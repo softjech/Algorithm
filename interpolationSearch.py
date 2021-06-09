@@ -8,7 +8,7 @@ def interpolationSearch(arr,k):
         pos= l+((k-arr[l])*(h-l))//(arr[h]-arr[l])
         if(arr[pos]==k):
             return pos
-        elif(arr[pos]>k):
+        elif(arr[pos]<k):
             l=pos+1
         else:
             h=pos-1
